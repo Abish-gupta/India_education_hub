@@ -172,17 +172,6 @@ jupyter notebook notebooks/eda.ipynb
 - `visuals/` — all 12 charts
 - `presentation/insights_report.md` — full written analysis
 - `pipeline.log` — execution trace
-
----
-
-## Future Improvements
-
-1. Year-on-year trend analysis (NIRF 2017–2024 all editions)
-2. District-level granularity from AISHE district tables
-3. Salary/placement data integration
-4. Streamlit dashboard for interactive exploration
-5. ML model: predict hub status from state features
-
 ---
 
 ## Tech Stack
@@ -191,4 +180,4 @@ jupyter notebook notebooks/eda.ipynb
 
 ---
 
-*Data: NIRF 2024 + AISHE 2021-22 | For internship technical assessment purposes*
+*Data: NIRF 2024 + AISHE 2021-22 *
