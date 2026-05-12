@@ -1,0 +1,242 @@
+12:44:50  INFO     ━━━ STAGE 1: DATA COLLECTION ━━━━━━━━━━━━━━━━━━━━━━━━━
+12:44:50  INFO     [NIRF] Attempting PDF extraction first...
+12:44:50  INFO     
+📄 PDF Extraction Pipeline Starting...
+12:44:50  INFO     =======================================================
+12:44:50  INFO       ⬇ Downloading: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering.pdf
+12:44:50  WARNING    ✗ PDF download failed [https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering.pdf]: 404 Client Error: Not Found for url: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering.pdf
+12:44:50  WARNING    Skipping Engineering — PDF unavailable
+12:44:50  INFO       ⬇ Downloading: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/University.pdf
+12:44:50  WARNING    ✗ PDF download failed [https://www.nirfindia.org/nirfpdfcdn/2024/pdf/University.pdf]: 404 Client Error: Not Found for url: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/University.pdf
+12:44:50  WARNING    Skipping University — PDF unavailable
+12:44:50  INFO       ⬇ Downloading: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Medical.pdf
+12:44:50  WARNING    ✗ PDF download failed [https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Medical.pdf]: 404 Client Error: Not Found for url: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Medical.pdf
+12:44:50  WARNING    Skipping Medical — PDF unavailable
+12:44:50  INFO       ⬇ Downloading: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management.pdf
+12:44:50  WARNING    ✗ PDF download failed [https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management.pdf]: 404 Client Error: Not Found for url: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management.pdf
+12:44:50  WARNING    Skipping Management — PDF unavailable
+12:44:50  INFO       ⬇ Downloading: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law.pdf
+12:44:51  WARNING    ✗ PDF download failed [https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law.pdf]: 404 Client Error: Not Found for url: https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law.pdf
+12:44:51  WARNING    Skipping Law — PDF unavailable
+12:44:51  INFO     
+⚠️  PDF extraction failed — will use embedded seed dataset
+12:44:51  INFO     [NIRF] PDF unavailable — trying HTML scraping...
+12:44:51  INFO     Scraping NIRF [Engineering] → https://www.nirfindia.org/2024/EngineeringRanking.html
+12:44:54  WARNING  Attempt 1 failed for https://www.nirfindia.org/2024/EngineeringRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/EngineeringRanking.html
+12:44:56  WARNING  Attempt 2 failed for https://www.nirfindia.org/2024/EngineeringRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/EngineeringRanking.html
+12:45:00  WARNING  Attempt 3 failed for https://www.nirfindia.org/2024/EngineeringRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/EngineeringRanking.html
+12:45:00  WARNING    ✗ Failed to fetch Engineering, will use seed data
+12:45:00  INFO     Scraping NIRF [University] → https://www.nirfindia.org/2024/UniversityRanking.html
+12:45:03  WARNING  Attempt 1 failed for https://www.nirfindia.org/2024/UniversityRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/UniversityRanking.html
+12:45:06  WARNING  Attempt 2 failed for https://www.nirfindia.org/2024/UniversityRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/UniversityRanking.html
+12:45:08  WARNING  Attempt 3 failed for https://www.nirfindia.org/2024/UniversityRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/UniversityRanking.html
+12:45:08  WARNING    ✗ Failed to fetch University, will use seed data
+12:45:08  INFO     Scraping NIRF [Medical] → https://www.nirfindia.org/2024/MedicalRanking.html
+12:45:11  WARNING  Attempt 1 failed for https://www.nirfindia.org/2024/MedicalRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/MedicalRanking.html
+12:45:14  WARNING  Attempt 2 failed for https://www.nirfindia.org/2024/MedicalRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/MedicalRanking.html
+12:45:16  WARNING  Attempt 3 failed for https://www.nirfindia.org/2024/MedicalRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/MedicalRanking.html
+12:45:16  WARNING    ✗ Failed to fetch Medical, will use seed data
+12:45:16  INFO     Scraping NIRF [Management] → https://www.nirfindia.org/2024/ManagementRanking.html
+12:45:19  WARNING  Attempt 1 failed for https://www.nirfindia.org/2024/ManagementRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/ManagementRanking.html
+12:45:22  WARNING  Attempt 2 failed for https://www.nirfindia.org/2024/ManagementRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/ManagementRanking.html
+12:45:24  WARNING  Attempt 3 failed for https://www.nirfindia.org/2024/ManagementRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/ManagementRanking.html
+12:45:24  WARNING    ✗ Failed to fetch Management, will use seed data
+12:45:24  INFO     Scraping NIRF [Law] → https://www.nirfindia.org/2024/LawRanking.html
+12:45:28  WARNING  Attempt 1 failed for https://www.nirfindia.org/2024/LawRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/LawRanking.html
+12:45:31  WARNING  Attempt 2 failed for https://www.nirfindia.org/2024/LawRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/LawRanking.html
+12:45:33  WARNING  Attempt 3 failed for https://www.nirfindia.org/2024/LawRanking.html: 404 Client Error: Not Found for url: https://www.nirfindia.org/2024/LawRanking.html
+12:45:33  WARNING    ✗ Failed to fetch Law, will use seed data
+12:45:33  INFO     Live scraping unavailable; using embedded seed dataset.
+12:45:33  INFO     Seed dataset loaded: 105 institutions
+12:45:33  INFO     [NIRF] Final: 105 institutions across 23 states
+12:45:33  INFO     [AISHE] Loading state-wise enrollment data...
+12:45:33  INFO     Attempting AISHE portal fetch...
+12:45:33  INFO     Using AISHE 2021-22 published report seed data.
+12:45:33  INFO     AISHE seed: 37 states loaded → data/raw/aishe_statewise.csv
+12:45:33  INFO     [AISHE] 37 states loaded
+12:45:33  INFO     [MIGRATION] Loading inter-state migration data...
+12:45:33  INFO     Migration data: 32 states → data/raw/student_migration.csv
+12:45:33  INFO     [MIGRATION] 32 states loaded
+12:45:33  INFO     
+━━━ STAGE 2: DATA CLEANING & ENGINEERING ━━━━━━━━━━━━━
+12:45:33  INFO     Cleaning NIRF dataset...
+12:45:33  INFO     NIRF cleaned: 105 rows, 23 states
+12:45:33  INFO     Cleaning AISHE dataset...
+12:45:33  INFO     AISHE cleaned: 37 states
+12:45:33  INFO     Cleaning migration dataset...
+12:45:33  INFO     Migration cleaned: 32 states
+12:45:33  INFO     Building master dataset...
+12:45:33  INFO     Master dataset saved → /Users/abish/Documents/aGi/🤝🏻 | Clients/Projects/Campusbinge /india_education_hub/data/processed/master_dataset.csv (37 rows, 30 cols)
+12:45:33  INFO     Master dataset: 37 rows × 30 columns
+12:45:33  INFO     
+━━━ STAGE 3: STATISTICAL ANALYSIS ━━━━━━━━━━━━━━━━━━━━
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     TOP EDUCATION HUB STATES
+12:45:33  INFO     ============================================================
+12:45:33  INFO     
+╭────┬─────────────┬───────────────────────┬────────────────┬─────────────╮
+│    │ state       │   education_hub_index │ hub_category   │ region      │
+├────┼─────────────┼───────────────────────┼────────────────┼─────────────┤
+│  1 │ Delhi       │                 80.75 │ Major Hub      │ North India │
+│  2 │ Puducherry  │                 78.27 │ Hub            │ South India │
+│  3 │ Chandigarh  │                 77.73 │ Major Hub      │ North India │
+│  4 │ Tamil Nadu  │                 74.7  │ Major Hub      │ South India │
+│  5 │ Karnataka   │                 66.22 │ Major Hub      │ South India │
+│  6 │ Telangana   │                 65.77 │ Major Hub      │ South India │
+│  7 │ Maharashtra │                 64.04 │ Major Hub      │ West India  │
+│  8 │ Kerala      │                 60    │ Minor Hub      │ South India │
+│  9 │ Uttarakhand │                 59.87 │ Neutral        │ North India │
+│ 10 │ Gujarat     │                 55.16 │ Minor Hub      │ West India  │
+╰────┴─────────────┴───────────────────────┴────────────────┴─────────────╯
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     MIGRATION FLOW ANALYSIS
+12:45:33  INFO     ============================================================
+12:45:33  INFO     Major Student Exporters  : 16 states
+12:45:33  INFO     Education Hubs (Attractors): 8 states
+12:45:33  INFO     Neutral States           : 8 states
+12:45:33  INFO     
+Top 5 Student-Exporting States:
+12:45:33  INFO                 state  net_migration_score  out_migration_pct
+            Bihar                -19.6               22.4
+Arunachal Pradesh                -15.5               21.3
+         Nagaland                -15.5               19.7
+        Jharkhand                -14.8               18.9
+          Mizoram                -13.9               17.8
+12:45:33  INFO     
+Top 5 Student-Attracting States:
+12:45:33  INFO          state  net_migration_score  in_migration_pct
+Chandigarh                 36.3              38.4
+     Delhi                 27.6              31.8
+Puducherry                 18.8              22.6
+Tamil Nadu                 16.5              24.7
+ Karnataka                 15.3              21.4
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     CORRELATIONS WITH NET MIGRATION SCORE
+12:45:33  INFO     ============================================================
+12:45:33  INFO       hub_score_normalized                +1.000  ███████████████████
+12:45:33  INFO       in_migration_pct                    +0.971  ███████████████████
+12:45:33  INFO       out_migration_pct                   -0.932  ██████████████████
+12:45:33  INFO       education_hub_index                 +0.894  █████████████████
+12:45:33  INFO       gross_enrolment_ratio               +0.775  ███████████████
+12:45:33  INFO       private_ratio                       +0.638  ████████████
+12:45:33  INFO       govt_ratio                          -0.638  ████████████
+12:45:33  INFO       govt_count                          +0.627  ████████████
+12:45:33  INFO       num_ranked_institutions             +0.606  ████████████
+12:45:33  INFO       top_rank_available                  -0.521  ██████████
+12:45:33  INFO       enrollment_per_institution          +0.459  █████████
+12:45:33  INFO       phd_students                        +0.452  █████████
+12:45:33  INFO       private_count                       +0.373  ███████
+12:45:33  INFO       avg_nirf_score                      +0.372  ███████
+12:45:33  INFO       female_ratio                        +0.268  █████
+12:45:33  INFO       gpi                                 +0.248  ████
+12:45:33  INFO       private_institutions                +0.240  ████
+12:45:33  INFO       female_enrollment_k                 +0.211  ████
+12:45:33  INFO       total_institutions                  +0.209  ████
+12:45:33  INFO       total_enrollment_k                  +0.191  ███
+12:45:33  INFO       male_enrollment_k                   +0.173  ███
+12:45:33  INFO       govt_institutions                   +0.098  █
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     TOP 20 INSTITUTIONS BY ROI (Score per Lakh Invested)
+12:45:33  INFO     ============================================================
+12:45:33  INFO     
+╭────┬────────────────────────────────┬───────────────┬────────────┬────────────┬─────────┬─────────────┬─────────────╮
+│    │ name                           │ state         │ category   │ type       │   score │   fees_lakh │   roi_score │
+├────┼────────────────────────────────┼───────────────┼────────────┼────────────┼─────────┼─────────────┼─────────────┤
+│ 65 │ AIIMS New Delhi                │ Delhi         │ Medical    │ Government │   91.88 │        0.60 │      153.90 │
+│ 66 │ PGIMER Chandigarh              │ Punjab        │ Medical    │ Government │   82.14 │        0.59 │      138.28 │
+│ 68 │ JIPMER Puducherry              │ Puducherry    │ Medical    │ Government │   75.41 │        0.59 │      128.25 │
+│ 71 │ AIIMS Jodhpur                  │ Rajasthan     │ Medical    │ Government │   68.12 │        0.58 │      117.65 │
+│ 72 │ SGPGI Lucknow                  │ Uttar Pradesh │ Medical    │ Government │   66.78 │        0.58 │      115.94 │
+│ 75 │ Madras Medical College         │ Tamil Nadu    │ Medical    │ Government │   63.89 │        0.57 │      112.68 │
+│ 76 │ Grant Medical College Mumbai   │ Maharashtra   │ Medical    │ Government │   62.67 │        0.56 │      111.12 │
+│ 77 │ King George Medical University │ Uttar Pradesh │ Medical    │ Government │   61.34 │        0.56 │      109.34 │
+│ 78 │ Maulana Azad Medical College   │ Delhi         │ Medical    │ Government │   60.12 │        0.56 │      107.74 │
+│ 79 │ Seth GS Medical College        │ Maharashtra   │ Medical    │ Government │   58.89 │        0.56 │      106.11 │
+│ 40 │ IISc Bengaluru                 │ Karnataka     │ University │ Government │   83.57 │        0.80 │      104.99 │
+│ 41 │ JNU New Delhi                  │ Delhi         │ University │ Government │   68.43 │        0.79 │       86.40 │
+│ 42 │ Jadavpur University            │ West Bengal   │ University │ Government │   66.78 │        0.79 │       84.75 │
+│ 44 │ University of Hyderabad        │ Telangana     │ University │ Government │   64.89 │        0.78 │       83.19 │
+│ 45 │ Banaras Hindu University       │ Uttar Pradesh │ University │ Government │   63.47 │        0.78 │       81.79 │
+│ 49 │ Jamia Millia Islamia           │ Delhi         │ University │ Government │   59.76 │        0.76 │       78.63 │
+│ 50 │ University of Delhi            │ Delhi         │ University │ Government │   59.12 │        0.76 │       78.20 │
+│ 51 │ Aligarh Muslim University      │ Uttar Pradesh │ University │ Government │   58.47 │        0.75 │       77.75 │
+│ 52 │ Calcutta University            │ West Bengal   │ University │ Government │   57.83 │        0.75 │       77.31 │
+│ 53 │ Osmania University             │ Telangana     │ University │ Government │   57.19 │        0.74 │       76.87 │
+╰────┴────────────────────────────────┴───────────────┴────────────┴────────────┴─────────┴─────────────┴─────────────╯
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     TOP EDUCATION HOTSPOT CITIES
+12:45:33  INFO     ============================================================
+12:45:33  INFO     
+╭────┬───────────┬────────────────┬────────────────────┬─────────────┬─────────────────╮
+│    │ city      │ state          │   num_institutions │   avg_score │   hotspot_score │
+├────┼───────────┼────────────────┼────────────────────┼─────────────┼─────────────────┤
+│  1 │ New Delhi │ Delhi          │                  9 │       68.36 │           51.51 │
+│  2 │ Jodhpur   │ Rajasthan      │                  3 │       61.71 │           37.51 │
+│  3 │ Bengaluru │ Karnataka      │                  6 │       66.61 │           35.98 │
+│  4 │ Chennai   │ Tamil Nadu     │                  6 │       62.02 │           35.61 │
+│  5 │ Kolkata   │ West Bengal    │                  5 │       65.83 │           33.75 │
+│  6 │ Mumbai    │ Maharashtra    │                  4 │       67.49 │           33.25 │
+│  7 │ Hyderabad │ Telangana      │                  4 │       64.59 │           32.38 │
+│  8 │ Indore    │ Madhya Pradesh │                  2 │       62.93 │           31.88 │
+│  9 │ Kanpur    │ Uttar Pradesh  │                  1 │       77.81 │           30.34 │
+│ 10 │ Lucknow   │ Uttar Pradesh  │                  3 │       66.89 │           30.07 │
+│ 11 │ Roorkee   │ Uttarakhand    │                  1 │       75.26 │           29.58 │
+│ 12 │ Kharagpur │ West Bengal    │                  1 │       74.91 │           29.47 │
+│ 13 │ Ahmedabad │ Gujarat        │                  2 │       69.67 │           28.90 │
+│ 14 │ Kozhikode │ Kerala         │                  1 │       73.89 │           28.17 │
+│ 15 │ Varanasi  │ Uttar Pradesh  │                  2 │       62.02 │           27.61 │
+╰────┴───────────┴────────────────┴────────────────────┴─────────────┴─────────────────╯
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     SOUTH INDIA vs REST OF INDIA ANALYSIS
+12:45:33  INFO     ============================================================
+12:45:33  INFO       avg_gross_enrolment_ratio           South=42.48  Other=31.89  [South ✓]
+12:45:33  INFO       avg_net_migration_score             South=10.18  Other=-2.98  [South ✓]
+12:45:33  INFO       total_ranked_institutions           South=42.00  Other=63.00  [Other ✓]
+12:45:33  INFO       avg_nirf_score                      South=60.27  Other=62.25  [Other ✓]
+12:45:33  INFO     
+============================================================
+12:45:33  INFO     GOVERNMENT vs PRIVATE INSTITUTION ANALYSIS
+12:45:33  INFO     ============================================================
+12:45:33  INFO     
+╭────────────┬─────────┬─────────────┬────────────┬────────────╮
+│ type       │   count │   avg_score │   avg_rank │   avg_fees │
+├────────────┼─────────┼─────────────┼────────────┼────────────┤
+│ Government │   71.00 │       63.97 │      11.39 │  117876.03 │
+│ Private    │   34.00 │       56.22 │      18.56 │  408192.62 │
+╰────────────┴─────────┴─────────────┴────────────┴────────────╯
+12:45:33  INFO     
+━━━ STAGE 4: VISUALIZATION GENERATION ━━━━━━━━━━━━━━━━
+12:45:33  INFO     
+📊 Generating visualizations...
+12:45:34  INFO       ✔ Saved → visuals/01_top_hub_states.png
+12:45:35  INFO       ✔ Saved → visuals/02_student_exporters.png
+12:45:35  INFO       ✔ Saved → visuals/03_enrollment_heatmap.png
+12:45:35  INFO       ✔ Saved → visuals/04_correlation_matrix.png
+12:45:35  INFO       ✔ Saved → visuals/05_state_institution_count.png
+12:45:36  INFO       ✔ Saved → visuals/06_choropleth_migration.html
+12:45:36  INFO       ✔ Saved → visuals/07_hub_index_bubble.html
+12:45:36  INFO       ✔ Saved → visuals/08_roi_analysis.png
+12:45:37  INFO       ✔ Saved → visuals/09_gender_parity.png
+12:45:37  INFO       ✔ Saved → visuals/10_sankey_migration.html
+12:45:37  INFO       ✔ Saved → visuals/11_south_vs_rest.png
+12:45:37  INFO       ✔ Saved → visuals/12_hotspot_cities.png
+12:45:37  INFO     
+✅ All visualizations saved to: visuals/
+12:45:37  INFO     
+━━━ STAGE 5: INSIGHT REPORT ━━━━━━━━━━━━━━━━━━━━━━━━━━
+12:45:37  INFO     ✅ Insight report saved → /Users/abish/Documents/aGi/🤝🏻 | Clients/Projects/Campusbinge /india_education_hub/presentation/insights_report.md
+12:45:37  INFO     ✅ Presentation outline → presentation/presentation_outline.md
+12:45:37  INFO     
+══════════════════════════════════════════════════════════════
+12:45:37  INFO     🎉 PIPELINE COMPLETE
+12:45:37  INFO       📁 Processed data  → data/processed/
+12:45:37  INFO       📊 Visualizations  → visuals/
+12:45:37  INFO       📝 Insight report  → presentation/insights_report.md
+12:45:37  INFO       📋 Pipeline log    → pipeline.log
+12:45:37  INFO     ══════════════════════════════════════════════════════════════

@@ -1,0 +1,33 @@
+state,out_migration_pct,in_migration_pct,net_migration_score,hub_category,hub_score_normalized,region
+Tamil Nadu,8.2,24.7,16.5,Major Hub,64.6,South India
+Karnataka,6.1,21.4,15.3,Major Hub,62.4,South India
+Maharashtra,5.8,18.9,13.1,Major Hub,58.5,West India
+Delhi,4.2,31.8,27.6,Major Hub,84.4,North India
+Kerala,9.4,12.1,2.7,Minor Hub,39.9,South India
+Telangana,7.3,17.2,9.9,Major Hub,52.8,South India
+Gujarat,6.8,11.4,4.6,Minor Hub,43.3,West India
+Andhra Pradesh,12.3,10.2,-2.1,Exporter,31.3,South India
+Rajasthan,11.2,9.8,-1.4,Neutral,32.6,North-West India
+West Bengal,10.4,11.8,1.4,Minor Hub,37.6,East India
+Madhya Pradesh,9.8,8.7,-1.1,Neutral,33.1,Central India
+Uttar Pradesh,13.6,6.8,-6.8,Major Exporter,22.9,North India
+Bihar,22.4,2.8,-19.6,Major Exporter,0.0,East India
+Jharkhand,18.9,4.1,-14.8,Major Exporter,8.6,East India
+Odisha,15.6,5.9,-9.7,Exporter,17.7,East India
+Punjab,16.2,8.3,-7.9,Exporter,20.9,North India
+Haryana,14.1,10.6,-3.5,Neutral,28.8,North India
+Himachal Pradesh,17.3,9.2,-8.1,Exporter,20.6,North India
+Uttarakhand,14.8,12.4,-2.4,Neutral,30.8,North India
+Assam,12.1,5.4,-6.7,Exporter,23.1,North-East India
+Chandigarh,2.1,38.4,36.3,Major Hub,100.0,North India
+Puducherry,3.8,22.6,18.8,Hub,68.7,South India
+Goa,5.2,19.8,14.6,Hub,61.2,West India
+Chhattisgarh,13.4,6.2,-7.2,Exporter,22.2,Central India
+Jammu & Kashmir,19.8,7.1,-12.7,Exporter,12.3,North India
+Manipur,14.2,8.9,-5.3,Exporter,25.6,North-East India
+Meghalaya,12.8,7.4,-5.4,Exporter,25.4,North-East India
+Arunachal Pradesh,21.3,5.8,-15.5,Major Exporter,7.3,North-East India
+Nagaland,19.7,4.2,-15.5,Major Exporter,7.3,North-East India
+Tripura,16.5,5.1,-11.4,Exporter,14.7,North-East India
+Mizoram,17.8,3.9,-13.9,Major Exporter,10.2,North-East India
+Sikkim,18.4,12.3,-6.1,Exporter,24.2,North-East India

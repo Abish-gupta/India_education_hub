@@ -1,0 +1,36 @@
+# ============================================================
+# India Education Hub — Requirements (PDF-first strategy)
+# ============================================================
+
+# Core Data
+pandas==2.2.2
+numpy==1.26.4
+
+# PDF Extraction (primary data layer)
+pdfplumber==0.11.0
+pymupdf==1.24.3
+
+# Web Scraping (fallback)
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.2.1
+
+# Visualization
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+kaleido==0.2.1
+
+# Geospatial
+geopandas==0.14.4
+shapely==2.0.4
+
+# Notebook
+jupyter==1.0.0
+ipykernel==6.29.4
+
+# Utilities
+tqdm==4.66.4
+tabulate==0.9.0
+colorama==0.4.6
+python-dotenv==1.0.1

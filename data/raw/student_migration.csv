@@ -1,0 +1,33 @@
+state,out_migration_pct,in_migration_pct,net_migration_score,hub_category
+Tamil Nadu,8.2,24.7,16.5,Major Hub
+Karnataka,6.1,21.4,15.3,Major Hub
+Maharashtra,5.8,18.9,13.1,Major Hub
+Delhi,4.2,31.8,27.6,Major Hub
+Kerala,9.4,12.1,2.7,Minor Hub
+Telangana,7.3,17.2,9.9,Major Hub
+Gujarat,6.8,11.4,4.6,Minor Hub
+Andhra Pradesh,12.3,10.2,-2.1,Exporter
+Rajasthan,11.2,9.8,-1.4,Neutral
+West Bengal,10.4,11.8,1.4,Minor Hub
+Madhya Pradesh,9.8,8.7,-1.1,Neutral
+Uttar Pradesh,13.6,6.8,-6.8,Major Exporter
+Bihar,22.4,2.8,-19.6,Major Exporter
+Jharkhand,18.9,4.1,-14.8,Major Exporter
+Odisha,15.6,5.9,-9.7,Exporter
+Punjab,16.2,8.3,-7.9,Exporter
+Haryana,14.1,10.6,-3.5,Neutral
+Himachal Pradesh,17.3,9.2,-8.1,Exporter
+Uttarakhand,14.8,12.4,-2.4,Neutral
+Assam,12.1,5.4,-6.7,Exporter
+Chandigarh,2.1,38.4,36.3,Major Hub
+Puducherry,3.8,22.6,18.8,Hub
+Goa,5.2,19.8,14.6,Hub
+Chhattisgarh,13.4,6.2,-7.2,Exporter
+Jammu & Kashmir,19.8,7.1,-12.7,Exporter
+Manipur,14.2,8.9,-5.3,Exporter
+Meghalaya,12.8,7.4,-5.4,Exporter
+Arunachal Pradesh,21.3,5.8,-15.5,Major Exporter
+Nagaland,19.7,4.2,-15.5,Major Exporter
+Tripura,16.5,5.1,-11.4,Exporter
+Mizoram,17.8,3.9,-13.9,Major Exporter
+Sikkim,18.4,12.3,-6.1,Exporter

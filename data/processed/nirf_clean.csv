@@ -1,0 +1,106 @@
+rank,name,city,state,score,category,type,tier,region,est_intake,est_annual_fees_inr
+1,IIT Madras,Chennai,Tamil Nadu,90.04,Engineering,Government,Tier 1 — Elite,South India,480,119400
+2,IIT Bombay,Mumbai,Maharashtra,83.96,Engineering,Government,Tier 1 — Elite,West India,480,118800
+3,IIT Delhi,New Delhi,Delhi,82.13,Engineering,Government,Tier 1 — Elite,North India,480,118200
+4,IIT Kanpur,Kanpur,Uttar Pradesh,77.81,Engineering,Government,Tier 1 — Elite,North India,480,117600
+5,IIT Roorkee,Roorkee,Uttarakhand,75.26,Engineering,Government,Tier 1 — Elite,North India,480,117000
+6,IIT Kharagpur,Kharagpur,West Bengal,74.91,Engineering,Government,Tier 1 — Elite,East India,480,116400
+7,IIT Hyderabad,Hyderabad,Telangana,65.84,Engineering,Government,Tier 1 — Elite,South India,480,115800
+8,NIT Trichy,Tiruchirappalli,Tamil Nadu,61.05,Engineering,Government,Tier 1 — Elite,South India,480,115200
+9,IIT Guwahati,Guwahati,Assam,60.98,Engineering,Government,Tier 1 — Elite,North-East India,480,114600
+10,IIT BHU Varanasi,Varanasi,Uttar Pradesh,60.57,Engineering,Government,Tier 1 — Elite,North India,480,114000
+11,IIT Gandhinagar,Gandhinagar,Gujarat,58.74,Engineering,Government,Tier 2 — Premier,West India,480,113400
+12,VIT Vellore,Vellore,Tamil Nadu,57.28,Engineering,Private,Tier 2 — Premier,South India,480,394800
+13,BITS Pilani,Pilani,Rajasthan,56.99,Engineering,Private,Tier 2 — Premier,North-West India,480,392700
+14,Jadavpur University,Kolkata,West Bengal,56.31,Engineering,Government,Tier 2 — Premier,East India,480,111599
+15,NIT Karnataka Surathkal,Surathkal,Karnataka,55.47,Engineering,Government,Tier 2 — Premier,South India,480,111000
+16,IIT Indore,Indore,Madhya Pradesh,54.63,Engineering,Government,Tier 2 — Premier,Central India,480,110400
+17,IIT Patna,Patna,Bihar,53.41,Engineering,Government,Tier 2 — Premier,East India,480,109800
+18,Amrita School of Engineering,Coimbatore,Tamil Nadu,52.9,Engineering,Private,Tier 2 — Premier,South India,480,382200
+19,PSG College of Technology,Coimbatore,Tamil Nadu,52.41,Engineering,Private,Tier 2 — Premier,South India,480,380100
+20,SASTRA Deemed University,Thanjavur,Tamil Nadu,51.87,Engineering,Private,Tier 2 — Premier,South India,480,378000
+21,Manipal Institute of Technology,Manipal,Karnataka,51.34,Engineering,Private,Tier 2 — Premier,South India,480,375900
+22,SRM Institute of Science,Chennai,Tamil Nadu,50.78,Engineering,Private,Tier 2 — Premier,South India,480,373800
+23,Anna University,Chennai,Tamil Nadu,50.22,Engineering,Government,Tier 2 — Premier,South India,480,106200
+24,Thapar Institute of Engineering,Patiala,Punjab,49.67,Engineering,Private,Tier 2 — Premier,North India,480,369600
+25,NIT Warangal,Warangal,Telangana,49.15,Engineering,Government,Tier 2 — Premier,South India,480,105000
+26,IIT Jodhpur,Jodhpur,Rajasthan,48.9,Engineering,Government,Tier 2 — Premier,North-West India,480,104400
+27,IIT Mandi,Mandi,Himachal Pradesh,48.12,Engineering,Government,Tier 2 — Premier,North India,480,103800
+28,COEP Technological University,Pune,Maharashtra,47.89,Engineering,Government,Tier 2 — Premier,West India,480,103200
+29,BMS College of Engineering,Bengaluru,Karnataka,47.35,Engineering,Private,Tier 2 — Premier,South India,480,359100
+30,Kalinga Institute of Industrial Tech,Bhubaneswar,Odisha,47.01,Engineering,Private,Tier 2 — Premier,East India,480,357000
+31,Vellore Institute of Technology AP,Amaravati,Andhra Pradesh,46.78,Engineering,Private,Tier 2 — Premier,South India,480,354900
+32,NIT Rourkela,Rourkela,Odisha,46.44,Engineering,Government,Tier 2 — Premier,East India,480,100800
+33,RVCE Bengaluru,Bengaluru,Karnataka,45.91,Engineering,Private,Tier 2 — Premier,South India,480,350700
+34,Birla Institute of Technology Mesra,Ranchi,Jharkhand,45.67,Engineering,Private,Tier 2 — Premier,East India,480,348600
+35,NIT Calicut,Calicut,Kerala,45.23,Engineering,Government,Tier 2 — Premier,South India,480,99000
+36,College of Engineering Pune,Pune,Maharashtra,44.89,Engineering,Government,Tier 2 — Premier,West India,480,98400
+37,Sri Sivasubramaniya Nadar College,Kalavakkam,Tamil Nadu,44.52,Engineering,Private,Tier 2 — Premier,South India,480,342300
+38,Shanmugha Arts Science Technology,Thanjavur,Tamil Nadu,44.18,Engineering,Private,Tier 2 — Premier,South India,480,340200
+39,MIT Manipal,Manipal,Karnataka,43.85,Engineering,Private,Tier 2 — Premier,South India,480,338100
+40,Visvesvaraya NIT Nagpur,Nagpur,Maharashtra,43.51,Engineering,Government,Tier 2 — Premier,West India,480,96000
+1,IISc Bengaluru,Bengaluru,Karnataka,83.57,University,Government,Tier 1 — Elite,South India,1200,79600
+2,JNU New Delhi,New Delhi,Delhi,68.43,University,Government,Tier 1 — Elite,North India,1200,79200
+3,Jadavpur University,Kolkata,West Bengal,66.78,University,Government,Tier 1 — Elite,East India,1200,78800
+4,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,65.11,University,Private,Tier 1 — Elite,South India,1200,274400
+5,University of Hyderabad,Hyderabad,Telangana,64.89,University,Government,Tier 1 — Elite,South India,1200,78000
+6,Banaras Hindu University,Varanasi,Uttar Pradesh,63.47,University,Government,Tier 1 — Elite,North India,1200,77600
+7,Manipal Academy of Higher Education,Manipal,Karnataka,62.03,University,Private,Tier 1 — Elite,South India,1200,270200
+8,Saveetha Institute of Medical Sciences,Chennai,Tamil Nadu,61.28,University,Private,Tier 1 — Elite,South India,1200,268800
+9,Vellore Institute of Technology,Vellore,Tamil Nadu,60.94,University,Private,Tier 1 — Elite,South India,1200,267400
+10,Jamia Millia Islamia,New Delhi,Delhi,59.76,University,Government,Tier 1 — Elite,North India,1200,76000
+11,University of Delhi,New Delhi,Delhi,59.12,University,Government,Tier 2 — Premier,North India,1200,75600
+12,Aligarh Muslim University,Aligarh,Uttar Pradesh,58.47,University,Government,Tier 2 — Premier,North India,1200,75200
+13,Calcutta University,Kolkata,West Bengal,57.83,University,Government,Tier 2 — Premier,East India,1200,74800
+14,Osmania University,Hyderabad,Telangana,57.19,University,Government,Tier 2 — Premier,South India,1200,74400
+15,Pune University,Pune,Maharashtra,56.55,University,Government,Tier 2 — Premier,West India,1200,74000
+16,Anna University,Chennai,Tamil Nadu,55.91,University,Government,Tier 2 — Premier,South India,1200,73600
+17,Kerala University,Thiruvananthapuram,Kerala,55.27,University,Government,Tier 2 — Premier,South India,1200,73200
+18,Mysore University,Mysuru,Karnataka,54.63,University,Government,Tier 2 — Premier,South India,1200,72800
+19,Gujarat University,Ahmedabad,Gujarat,53.99,University,Government,Tier 2 — Premier,West India,1200,72400
+20,Andhra University,Visakhapatnam,Andhra Pradesh,53.35,University,Government,Tier 2 — Premier,South India,1200,72000
+21,Panjab University,Chandigarh,Punjab,52.71,University,Government,Tier 2 — Premier,North India,1200,71600
+22,Symbiosis International University,Pune,Maharashtra,52.07,University,Private,Tier 2 — Premier,West India,1200,249200
+23,KIIT University,Bhubaneswar,Odisha,51.43,University,Private,Tier 2 — Premier,East India,1200,247800
+24,Lovely Professional University,Phagwara,Punjab,50.79,University,Private,Tier 2 — Premier,North India,1200,246400
+25,Shoolini University,Solan,Himachal Pradesh,50.15,University,Private,Tier 2 — Premier,North India,1200,245000
+1,AIIMS New Delhi,New Delhi,Delhi,91.88,Medical,Government,Tier 1 — Elite,North India,150,59700
+2,PGIMER Chandigarh,Chandigarh,Punjab,82.14,Medical,Government,Tier 1 — Elite,North India,150,59400
+3,CMC Vellore,Vellore,Tamil Nadu,77.23,Medical,Private,Tier 1 — Elite,South India,150,206850
+4,JIPMER Puducherry,Puducherry,Puducherry,75.41,Medical,Government,Tier 1 — Elite,South India,150,58800
+5,Amrita Institute of Medical Sciences,Kochi,Kerala,70.89,Medical,Private,Tier 1 — Elite,South India,150,204750
+6,Kasturba Medical College Manipal,Manipal,Karnataka,69.34,Medical,Private,Tier 1 — Elite,South India,150,203700
+7,AIIMS Jodhpur,Jodhpur,Rajasthan,68.12,Medical,Government,Tier 1 — Elite,North-West India,150,57900
+8,SGPGI Lucknow,Lucknow,Uttar Pradesh,66.78,Medical,Government,Tier 1 — Elite,North India,150,57600
+9,St. John's Medical College,Bengaluru,Karnataka,65.45,Medical,Private,Tier 1 — Elite,South India,150,200550
+10,Jawaharlal Nehru Medical College,Belgaum,Karnataka,64.12,Medical,Private,Tier 1 — Elite,South India,150,199500
+11,Madras Medical College,Chennai,Tamil Nadu,63.89,Medical,Government,Tier 2 — Premier,South India,150,56700
+12,Grant Medical College Mumbai,Mumbai,Maharashtra,62.67,Medical,Government,Tier 2 — Premier,West India,150,56400
+13,King George Medical University,Lucknow,Uttar Pradesh,61.34,Medical,Government,Tier 2 — Premier,North India,150,56100
+14,Maulana Azad Medical College,New Delhi,Delhi,60.12,Medical,Government,Tier 2 — Premier,North India,150,55799
+15,Seth GS Medical College,Mumbai,Maharashtra,58.89,Medical,Government,Tier 2 — Premier,West India,150,55500
+1,IIM Ahmedabad,Ahmedabad,Gujarat,85.34,Management,Government,Tier 1 — Elite,West India,240,298500
+2,IIM Bengaluru,Bengaluru,Karnataka,83.12,Management,Government,Tier 1 — Elite,South India,240,297000
+3,IIM Calcutta,Kolkata,West Bengal,81.45,Management,Government,Tier 1 — Elite,East India,240,295500
+4,IIM Kozhikode,Kozhikode,Kerala,73.89,Management,Government,Tier 1 — Elite,South India,240,294000
+5,IIM Lucknow,Lucknow,Uttar Pradesh,72.56,Management,Government,Tier 1 — Elite,North India,240,292500
+6,IIM Indore,Indore,Madhya Pradesh,71.23,Management,Government,Tier 1 — Elite,Central India,240,291000
+7,XLRI Jamshedpur,Jamshedpur,Jharkhand,70.89,Management,Private,Tier 1 — Elite,East India,240,1013250
+8,IIM Shillong,Shillong,Meghalaya,68.45,Management,Government,Tier 1 — Elite,North-East India,240,288000
+9,MDI Gurgaon,Gurugram,Haryana,67.12,Management,Private,Tier 1 — Elite,North India,240,1002750
+10,IIM Rohtak,Rohtak,Haryana,65.78,Management,Government,Tier 1 — Elite,North India,240,285000
+11,SPJIMR Mumbai,Mumbai,Maharashtra,64.45,Management,Private,Tier 2 — Premier,West India,240,992250
+12,IIM Trichy,Tiruchirappalli,Tamil Nadu,63.12,Management,Government,Tier 2 — Premier,South India,240,282000
+13,IIFT New Delhi,New Delhi,Delhi,61.78,Management,Government,Tier 2 — Premier,North India,240,280500
+14,IMT Ghaziabad,Ghaziabad,Uttar Pradesh,60.45,Management,Private,Tier 2 — Premier,North India,240,976499
+15,FORE School of Management,New Delhi,Delhi,59.12,Management,Private,Tier 2 — Premier,North India,240,971250
+1,NLSIU Bengaluru,Bengaluru,Karnataka,74.23,Law,Government,Tier 1 — Elite,South India,120,99500
+2,NLU Delhi,New Delhi,Delhi,72.89,Law,Government,Tier 1 — Elite,North India,120,99000
+3,NALSAR Hyderabad,Hyderabad,Telangana,70.45,Law,Government,Tier 1 — Elite,South India,120,98500
+4,NLU Jodhpur,Jodhpur,Rajasthan,68.12,Law,Government,Tier 1 — Elite,North-West India,120,98000
+5,WBNUJS Kolkata,Kolkata,West Bengal,66.78,Law,Government,Tier 1 — Elite,East India,120,97500
+6,NLU Bhopal (NLIU),Bhopal,Madhya Pradesh,65.45,Law,Government,Tier 1 — Elite,Central India,120,97000
+7,NLU Gandhinagar,Gandhinagar,Gujarat,64.12,Law,Government,Tier 1 — Elite,West India,120,96500
+8,HNLU Raipur,Raipur,Chhattisgarh,62.78,Law,Government,Tier 1 — Elite,Central India,120,96000
+9,RGNUL Patiala,Patiala,Punjab,61.45,Law,Government,Tier 1 — Elite,North India,120,95500
+10,CNLU Patna,Patna,Bihar,60.12,Law,Government,Tier 1 — Elite,East India,120,95000
