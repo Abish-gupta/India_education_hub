@@ -178,6 +178,4 @@ jupyter notebook notebooks/eda.ipynb
 
 `Python 3.11` · `pandas` · `numpy` · `pdfplumber` · `requests` · `BeautifulSoup4` · `matplotlib` · `seaborn` · `plotly` · `geopandas`
 
----
 
-*Data: NIRF 2024 + AISHE 2021-22 *
