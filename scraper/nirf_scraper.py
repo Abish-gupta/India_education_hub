@@ -8,11 +8,18 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from pathlib import Path
 
+# ── Logging ────────────────────────────────────────────────
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
 log = logging.getLogger(__name__)
 
+# ── Paths ─────────────────────────────────────────────────
 RAW_DIR = Path(__file__).parent.parent / "data" / "raw"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
 
+# ── HTTP config ───────────────────────────────────────────
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -23,15 +30,25 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
-NIRF_CATEGORIES = {
-    "Engineering": "https://www.nirfindia.org/2024/EngineeringRanking.html",
-    "University":  "https://www.nirfindia.org/2024/UniversityRanking.html",
-    "Medical":     "https://www.nirfindia.org/2024/MedicalRanking.html",
-    "Management":  "https://www.nirfindia.org/2024/ManagementRanking.html",
-    "Law":         "https://www.nirfindia.org/2024/LawRanking.html",
+# ── NIRF 2024 category pages (use new Rankings paths) ─────
+# Right now we only know the correct Overall URL for sure.
+# You can update/add others once you confirm them in the browser.
+NIRF_CATEGORIES: dict[str, str] = {
+    "Overall": "https://www.nirfindia.org/Rankings/2024/OverallRanking.html",
+    # "Engineering": "https://www.nirfindia.org/Rankings/2024/EngineeringRanking.html",
+    # "University":  "https://www.nirfindia.org/Rankings/2024/UniversityRanking.html",
+    # "Medical":     "https://www.nirfindia.org/Rankings/2024/MedicalRanking.html",
+    # "Management":  "https://www.nirfindia.org/Rankings/2024/ManagementRanking.html",
+    # "Law":         "https://www.nirfindia.org/Rankings/2024/LawRanking.html",
 }
 
+
+# ── Helpers ───────────────────────────────────────────────
 def _polite_get(url: str, retries: int = 3) -> requests.Response | None:
+    """
+    HTTP GET with retry logic and polite random delay.
+    Live only: returns None if all retries fail.
+    """
     for attempt in range(retries):
         try:
             time.sleep(random.uniform(1.5, 3.5))
@@ -39,37 +56,14 @@ def _polite_get(url: str, retries: int = 3) -> requests.Response | None:
             resp.raise_for_status()
             return resp
         except requests.RequestException as e:
-            log.warning(f"Attempt {attempt+1} failed for {url}: {e}")
+            log.warning(f"Attempt {attempt + 1} failed for {url}: {e}")
     return None
 
-def parse_nirf_table(html: str, category: str) -> list[dict]:
-    soup = BeautifulSoup(html, "lxml")
-    records: list[dict] = []
-
-    table = soup.find("table", {"class": lambda c: c and "ranking" in c.lower()})
-    if table is None:
-        table = soup.find("table")
-
-    if table is None:
-        log.warning(f"No table found for category: {category}")
-        return records
-
-    rows = table.find_all("tr")[1:]
-    for row in rows:
-        cols = [td.get_text(strip=True) for td in row.find_all("td")]
-        if len(cols) >= 5:
-            records.append({
-                "rank":     cols[0],
-                "name":     cols[1],
-                "city":     cols[2] if len(cols) > 2 else "Unknown",
-                "state":    cols[3] if len(cols) > 3 else "Unknown",
-                "score":    cols[4] if len(cols) > 4 else None,
-                "category": category,
-                "type":     _infer_type(cols[1]),
-            })
-    return records
 
 def _infer_type(name: str) -> str:
+    """
+    Heuristically classify institution as Government or Private based on name.
+    """
     govt_keywords = [
         "IIT", "NIT", "AIIMS", "IIM", "Central", "National",
         "Government", "Govt", "State", "University of",
@@ -80,10 +74,61 @@ def _infer_type(name: str) -> str:
             return "Government"
     return "Private"
 
+
+def parse_nirf_table(html: str, category: str) -> list[dict]:
+    """
+    Parse NIRF ranking table rows from a category page into a list of dicts.
+
+    Assumes the table structure like the 'India Rankings 2024: Overall' page:
+
+    | Institute ID | Name | City | State | Score | Rank |
+    """
+    soup = BeautifulSoup(html, "lxml")
+    records: list[dict] = []
+
+    # NIRF usually has a single main table on the page
+    table = soup.find("table")
+    if table is None:
+        log.warning(f"No table found for category: {category}")
+        return records
+
+    rows = table.find_all("tr")[1:]  # skip header row
+
+    for row in rows:
+        cols = [td.get_text(strip=True) for td in row.find_all("td")]
+        # Expecting at least 6 columns: id, name, city, state, score, rank
+        if len(cols) >= 6:
+            institute_id = cols[0]
+            name = cols[1]
+            city = cols[2]
+            state = cols[3]
+            score = cols[4]
+            rank = cols[5]
+
+            records.append(
+                {
+                    "institute_id": institute_id,
+                    "name": name,
+                    "city": city,
+                    "state": state,
+                    "score": score,
+                    "rank": rank,
+                    "category": category,
+                    "type": _infer_type(name),
+                }
+            )
+
+    return records
+
+
+# ── Main entrypoint ───────────────────────────────────────
 def scrape_nirf() -> pd.DataFrame:
     """
-    Main scraper: iterates NIRF categories, parses tables.
-    Live scraping only: if site fails, raises error instead of using seed data.
+    Scrape NIRF 2024 rankings for all configured categories.
+
+    - Live scraping only (no dummy data).
+    - If a category fails, it logs an error and continues with others.
+    - If no data at all is scraped, raises RuntimeError.
     """
     all_records: list[dict] = []
 
@@ -100,13 +145,18 @@ def scrape_nirf() -> pd.DataFrame:
         all_records.extend(records)
 
     if not all_records:
-        # Hard fail: nothing scraped at all
-        raise RuntimeError("No NIRF data scraped. Check network or NIRF site structure.")
+        # Hard fail: nothing scraped from any category
+        raise RuntimeError(
+            "No NIRF data scraped for any category. "
+            "Check network or NIRF site structure."
+        )
 
     df = pd.DataFrame(all_records)
-    df.to_csv(RAW_DIR / "nirf_raw.csv", index=False)
-    log.info(f"Saved {len(df)} rows → data/raw/nirf_raw.csv")
+    out_path = RAW_DIR / "nirf_raw.csv"
+    df.to_csv(out_path, index=False)
+    log.info(f"Saved {len(df)} rows → {out_path}")
     return df
+
 
 if __name__ == "__main__":
     df = scrape_nirf()
